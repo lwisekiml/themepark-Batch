@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  mysql:
+    container_name: mysql_local
+    build: .
+    ports:
+      - "3307:3306"
+    environment:
+      - MYSQL_DATABASE=themepark_local
+      - MYSQL_USER=themepark_local_user
+      - MYSQL_PASSWORD=themepark1234
+      - MYSQL_ROOT_PASSWORD=themeparkroot1234
+      - TZ=Asis/Seoul
