@@ -1,0 +1,11 @@
+spring:
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+logging:
+  level:
+    org.hibernate.type.descriptor.sql: trace
+
+# jpa로 쿼리를 수행할 때 쿼리를 로깅으로 볼 수 있게 하는 속성들

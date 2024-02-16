@@ -2,7 +2,6 @@ package com.freepass.themepark;
 
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.Step;
-import org.springframework.batch.core.configuration.annotation.EnableBatchProcessing;
 import org.springframework.batch.core.configuration.annotation.JobBuilderFactory;
 import org.springframework.batch.core.configuration.annotation.StepBuilderFactory;
 import org.springframework.batch.repeat.RepeatStatus;
@@ -10,7 +9,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
-@EnableBatchProcessing // 배치를 돌리기 위함
+//@EnableBatchProcessing // 배치를 돌리기 위함 (BatchConfig로 따로 분리)
 @SpringBootApplication
 public class ThemeparkBatchApplication {
 

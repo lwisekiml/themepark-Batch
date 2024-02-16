@@ -31,7 +31,7 @@ CREATE TABLE `booking`
     `user_id`      varchar(20)  NOT NULL COMMENT '사용자 ID',
     `status`       varchar(10)  NOT NULL COMMENT '상태',
     `used_pass`    tinyint(1)   NOT NULL DEFAULT '0' COMMENT '이용권 사용 여부',
-    `attended`     tinyint(1)   NOT NULL DEFAULT '0' COMMENT '방문 여부',
+    `visited`      tinyint(1)   NOT NULL DEFAULT '0' COMMENT '방문 여부',
     `started_at`   timestamp    NOT NULL COMMENT '시작 일시',
     `ended_at`     timestamp    NOT NULL COMMENT '종료 일시',
     `cancelled_at` timestamp    DEFAULT NULL COMMENT '취소 일시',
